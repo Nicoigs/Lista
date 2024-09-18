@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+    <script>
+
+        var item = "x";
+        var cant = "x";
+        let i = 0;
+        var lista = prompt("De que va a ser la lista?");
+
+        document.write('<h1>Lista de ' + lista + '</h1>');
+
+        while(item.toLowerCase() != "fin"){
+
+            item = prompt('ITEM ' + (i+1));
+
+                if(item.toLowerCase() != "fin"){
+
+                    cant = prompt("CANTIDAD");
+
+                    document.write('<div><p class="i">' + item + '</p>');
+                    document.write('<p class="c">' + cant + '</p></div>');
+
+                }
+
+            i++;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
